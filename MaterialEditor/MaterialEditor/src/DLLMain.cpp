@@ -1,0 +1,28 @@
+#include "Hooks/Hooks.h"
+
+DWORD WINAPI MainThread(LPVOID lpParam)
+{
+	g_pMaterialSystem	= reinterpret_cast<IMaterialSystem *>(g_Interface.Get(L"materialsystem.dll", "VMaterialSystem081"));
+	g_pModelRender		= reinterpret_cast<IVModelRender *>(g_Interface.Get(L"engine.dll", "VEngineModel016"));
+	g_dwDirectXDevice	= **reinterpret_cast<DWORD **>(g_Pattern.Find(L"shaderapidx9.dll", L"A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1);
+
+	g_Hooks.Init();
+
+	while (!GetAsyncKeyState(VK_F11))
+		Sleep(100);
+	
+	g_Hooks.Exit();
+
+	FreeLibraryAndExitThread(static_cast<HMODULE>(lpParam), EXIT_SUCCESS);
+}
+
+BOOL WINAPI DllMain(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpvReserved)
+{
+	if (fdwReason == DLL_PROCESS_ATTACH)
+	{
+		if (auto hMainThread = CreateThread(0, 0, MainThread, hinstDLL, 0, 0))
+			CloseHandle(hMainThread);
+	}
+
+	return TRUE;
+}

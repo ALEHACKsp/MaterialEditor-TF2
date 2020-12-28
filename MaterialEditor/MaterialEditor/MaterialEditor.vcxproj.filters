@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{ec66ca0b-c75c-4ce9-a03d-7e6d31f019d1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\DLLMain.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Utils\Hook\MinHook\hde\hde32.c" />
+    <ClCompile Include="src\Utils\Hook\MinHook\hde\hde64.c" />
+    <ClCompile Include="src\Utils\Hook\MinHook\buffer.c" />
+    <ClCompile Include="src\Utils\Hook\MinHook\hook.c" />
+    <ClCompile Include="src\Utils\Hook\MinHook\trampoline.c" />
+    <ClCompile Include="src\Utils\Pattern\Pattern.cpp" />
+    <ClCompile Include="src\Utils\Interface\Interface.cpp" />
+    <ClCompile Include="src\SDK\KeyValues\KeyValues.cpp" />
+    <ClCompile Include="src\Hooks\DrawModelExecute\DrawModelExecute.cpp" />
+    <ClCompile Include="src\Hooks\Hooks.cpp" />
+    <ClCompile Include="src\Editor\Editor.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_demo.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_draw.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_impl_dx9.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_impl_win32.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_tables.cpp" />
+    <ClCompile Include="src\Editor\ImGui\imgui_widgets.cpp" />
+    <ClCompile Include="src\Hooks\EndScene\EndScene.cpp" />
+    <ClCompile Include="src\Hooks\Reset\Reset.cpp" />
+    <ClCompile Include="src\Hooks\WndProc\WndProc.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Utils\Utils.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\hde\hde32.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\hde\hde64.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\hde\pstdint.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\hde\table32.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\hde\table64.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\buffer.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\MinHook.h" />
+    <ClInclude Include="src\Utils\Hook\MinHook\trampoline.h" />
+    <ClInclude Include="src\Utils\Hook\Hook.h" />
+    <ClInclude Include="src\Utils\Pattern\Pattern.h" />
+    <ClInclude Include="src\Utils\Vector\Vector.h" />
+    <ClInclude Include="src\Utils\Interface\Interface.h" />
+    <ClInclude Include="src\SDK\KeyValues\KeyValues.h" />
+    <ClInclude Include="src\SDK\Material\Material.h" />
+    <ClInclude Include="src\SDK\MaterialSystem\MaterialSystem.h" />
+    <ClInclude Include="src\SDK\SDK.h" />
+    <ClInclude Include="src\Hooks\DrawModelExecute\DrawModelExecute.h" />
+    <ClInclude Include="src\Hooks\Hooks.h" />
+    <ClInclude Include="src\SDK\ModelRender\ModelRender.h" />
+    <ClInclude Include="src\Utils\Color\Color.h" />
+    <ClInclude Include="src\Editor\Editor.h" />
+    <ClInclude Include="src\Editor\ImGui\imconfig.h" />
+    <ClInclude Include="src\Editor\ImGui\imgui.h" />
+    <ClInclude Include="src\Editor\ImGui\imgui_impl_dx9.h" />
+    <ClInclude Include="src\Editor\ImGui\imgui_impl_win32.h" />
+    <ClInclude Include="src\Editor\ImGui\imgui_internal.h" />
+    <ClInclude Include="src\Editor\ImGui\imstb_rectpack.h" />
+    <ClInclude Include="src\Editor\ImGui\imstb_textedit.h" />
+    <ClInclude Include="src\Editor\ImGui\imstb_truetype.h" />
+    <ClInclude Include="src\Hooks\EndScene\EndScene.h" />
+    <ClInclude Include="src\Hooks\Reset\Reset.h" />
+    <ClInclude Include="src\Hooks\WndProc\WndProc.h" />
+    <ClInclude Include="src\SDK\DirectX\DirectX.h" />
+  </ItemGroup>
+</Project>

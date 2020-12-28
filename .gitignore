@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+*.ipch
+*.db
+MaterialEditor/.vs/MaterialEditor/v16/.suo
+*.bat
+*.ilk
+*.pdb
+*.recipe
+*.log
+*.tlog
+*.idb
+*.ipdb
+*.iobj
