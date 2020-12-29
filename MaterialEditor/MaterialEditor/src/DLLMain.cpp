@@ -4,8 +4,9 @@ DWORD WINAPI MainThread(LPVOID lpParam)
 {
 	g_pMaterialSystem	= reinterpret_cast<IMaterialSystem *>(g_Interface.Get(L"materialsystem.dll", "VMaterialSystem081"));
 	g_pModelRender		= reinterpret_cast<IVModelRender *>(g_Interface.Get(L"engine.dll", "VEngineModel016"));
+	g_pSurface			= reinterpret_cast<ISurface *>(g_Interface.Get(L"vguimatsurface.dll", "VGUI_Surface030"));
 	g_dwDirectXDevice	= **reinterpret_cast<DWORD **>(g_Pattern.Find(L"shaderapidx9.dll", L"A1 ? ? ? ? 50 8B 08 FF 51 0C") + 0x1);
-
+	
 	g_Hooks.Init();
 
 	while (!GetAsyncKeyState(VK_F11))

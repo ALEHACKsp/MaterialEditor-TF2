@@ -5,8 +5,10 @@ extern IMGUI_IMPL_API LRESULT ImGui_ImplWin32_WndProcHandler(HWND hWnd, UINT msg
 
 LONG __stdcall Hooks::WndProc::Func(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-	if (g_Editor.IsOpen() && ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam))
+	if (g_Editor.IsOpen()) {
+		ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
 		return 1;
+	}
 
 	return CallWindowProc(Original, hWnd, uMsg, wParam, lParam);
 }

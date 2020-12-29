@@ -3,6 +3,7 @@
 #include "EndScene/EndScene.h"
 #include "Reset/Reset.h"
 #include "WndProc/WndProc.h"
+#include "LockCursor/LockCursor.h"
 
 class CHooks
 {

@@ -8,6 +8,7 @@ void CHooks::Init()
 		Hooks::EndScene::Init();
 		Hooks::Reset::Init();
 		Hooks::WndProc::Init();
+		Hooks::LockCursor::Init();
 	}
 	MH_EnableHook(MH_ALL_HOOKS);
 }

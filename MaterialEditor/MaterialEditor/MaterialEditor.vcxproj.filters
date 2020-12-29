@@ -30,6 +30,8 @@
     <ClCompile Include="src\Hooks\EndScene\EndScene.cpp" />
     <ClCompile Include="src\Hooks\Reset\Reset.cpp" />
     <ClCompile Include="src\Hooks\WndProc\WndProc.cpp" />
+    <ClCompile Include="src\Hooks\LockCursor\LockCursor.cpp" />
+    <ClCompile Include="src\Editor\TextEditor\TextEditor.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Utils\Utils.h" />
@@ -66,5 +68,9 @@
     <ClInclude Include="src\Hooks\Reset\Reset.h" />
     <ClInclude Include="src\Hooks\WndProc\WndProc.h" />
     <ClInclude Include="src\SDK\DirectX\DirectX.h" />
+    <ClInclude Include="src\SDK\Surface\Surface.h" />
+    <ClInclude Include="src\SDK\AppSystem\AppSystem.h" />
+    <ClInclude Include="src\Hooks\LockCursor\LockCursor.h" />
+    <ClInclude Include="src\Editor\TextEditor\TextEditor.h" />
   </ItemGroup>
 </Project>
