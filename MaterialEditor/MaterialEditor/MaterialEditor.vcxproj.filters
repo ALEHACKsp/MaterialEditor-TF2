@@ -72,5 +72,6 @@
     <ClInclude Include="src\SDK\AppSystem\AppSystem.h" />
     <ClInclude Include="src\Hooks\LockCursor\LockCursor.h" />
     <ClInclude Include="src\Editor\TextEditor\TextEditor.h" />
+    <ClInclude Include="src\SDK\InputSystem\InputSystem.h" />
   </ItemGroup>
 </Project>

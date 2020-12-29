@@ -84,7 +84,7 @@ enum ETextureFormat
 {
 	eTextureFormat_RGBA,
 	eTextureFormat_BGRA,
-	eTextureFormat_BGRA_Opaque, // bgra format but alpha is always 255, CEF does this, we can use this fact for better perf on win32 gdi
+	eTextureFormat_BGRA_Opaque
 };
 
 using VPANEL = unsigned int;

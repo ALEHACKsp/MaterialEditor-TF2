@@ -53,7 +53,7 @@ HMODULE CPattern::GetModuleHandleSafe(LPCWSTR szModuleName)
 DWORD CPattern::Find(LPCWSTR szModuleName, LPCWSTR szPattern)
 {
 	HMODULE hmModule = GetModuleHandleSafe(szModuleName);
-	static PIMAGE_DOS_HEADER pDOSHeader = (PIMAGE_DOS_HEADER)hmModule;
-	static PIMAGE_NT_HEADERS pNTHeaders = (PIMAGE_NT_HEADERS)(((DWORD)hmModule) + pDOSHeader->e_lfanew);
+	PIMAGE_DOS_HEADER pDOSHeader = (PIMAGE_DOS_HEADER)hmModule;
+	PIMAGE_NT_HEADERS pNTHeaders = (PIMAGE_NT_HEADERS)(((DWORD)hmModule) + pDOSHeader->e_lfanew);
 	return FindPattern(((DWORD)hmModule) + pNTHeaders->OptionalHeader.BaseOfCode, ((DWORD)hmModule) + pNTHeaders->OptionalHeader.SizeOfCode, szPattern);
 }

@@ -189,6 +189,7 @@
     <ClInclude Include="src\Hooks\WndProc\WndProc.h" />
     <ClInclude Include="src\SDK\AppSystem\AppSystem.h" />
     <ClInclude Include="src\SDK\DirectX\DirectX.h" />
+    <ClInclude Include="src\SDK\InputSystem\InputSystem.h" />
     <ClInclude Include="src\SDK\KeyValues\KeyValues.h" />
     <ClInclude Include="src\SDK\MaterialSystem\MaterialSystem.h" />
     <ClInclude Include="src\SDK\Material\Material.h" />

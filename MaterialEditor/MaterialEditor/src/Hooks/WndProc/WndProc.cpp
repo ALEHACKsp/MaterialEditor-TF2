@@ -7,9 +7,10 @@ LONG __stdcall Hooks::WndProc::Func(HWND hWnd, UINT uMsg, WPARAM wParam, LPARAM 
 {
 	if (g_Editor.IsOpen()) {
 		ImGui_ImplWin32_WndProcHandler(hWnd, uMsg, wParam, lParam);
+		g_pInputSystem->ResetInputState();
 		return 1;
 	}
-
+	
 	return CallWindowProc(Original, hWnd, uMsg, wParam, lParam);
 }
 
